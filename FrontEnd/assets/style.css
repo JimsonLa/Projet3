@@ -186,6 +186,8 @@ footer nav ul {
 	margin: 2em
 }
 
+/* Placement et style des boutons */
+
 #filters button{
 	padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -210,4 +212,68 @@ footer nav ul {
 	background-color: #1D6154;
 	color: white;
 	cursor: pointer;
+}
+
+/* ------------------------------------------- */
+
+/* Navbar & Logo */
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+li{
+	cursor: pointer;
+}
+
+#login{
+	font-weight: bolder;
+}
+
+main h2{
+	margin-top: 10%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+
+/* Formulaire */
+
+form{
+	text-align: center;
+}
+
+#labelMdp {
+	margin-left: -7%;
+}
+
+#labelMail{
+	margin-left: -11%;
+}
+
+input {
+	margin-bottom: 15px;
+	padding: 8px;
+	border: 1px solid #cccccc8a;
+	border-radius: 3px;
+}
+
+#MdpOublie{
+	margin : 2em auto ;
+	text-align: center;
+}
+
+#MdpOublie:hover{
+	text-decoration: underline;
+}
+
+/* Footer */
+
+#navFooter{
+	margin-top: 12%;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
