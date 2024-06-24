@@ -258,6 +258,10 @@ input {
 	border-radius: 3px;
 }
 
+#inputLogin{
+	cursor: pointer;
+}
+
 #MdpOublie{
 	margin : 2em auto ;
 	text-align: center;
@@ -277,3 +281,11 @@ input {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+
+#filters button.active{
+    background-color: #1D6154;
+	color: white;
+	cursor: pointer;
+}
+ 

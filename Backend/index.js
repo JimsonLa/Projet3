@@ -35,18 +35,32 @@ function fetchCategories (works) {
         filterDiv.innerHTML = ""
         const allBtn = document.createElement("button")
         allBtn.textContent = "Tous";
+        allBtn.classList.add("active")
         allBtn.onclick = () => {
             displayGallery(works, ".gallery")
+            allBtn.classList.add("active")
         };
+
         filterDiv.appendChild(allBtn)
         categories.forEach(category => {
             const btn = document.createElement("button")
             btn.textContent = category.name
             btn.onclick = () => {
                 filterByCategories(works, category)
+                allBtn.classList.remove("active")
             };
             filterDiv.appendChild(btn)
         })
     })
 }
+
+/*
+
+            window.addEventListener("load" , () => {
+                btn.classList.add("active")
+            })
+
+*/
+
+// A FAIRE : BOUTON "TOUS" ACTIVE PAR DEFAUT + PARTIE AUTHENTIFICATION METHOD POST VOIR SWAGGER + MODALE
 
