@@ -9,14 +9,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	<script src="../Backend/index.js" defer></script>
+    <script src="../Backend/login.js" defer></script>
+    <script src="../Backend/modifs.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
         <nav>
             <ul>
-                <li>projets</li>
+                <a href="index.html"><li>projets</li></a>
                 <li>contact</li>
                 <li id="login">login</li>
                 <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
@@ -25,12 +26,13 @@
     </header>
     <main>
         <h2>Log In</h2>
-        <form action="/submit-form" method="post">
+        <form action="#" method="post">
             <div id="formMail">
                 <label for="email" id="labelMail">E-mail</label><br>
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="password" id="labelMdp">Mot de passe</label><br>
                 <input type="password" id="password" name="password" required><br>
+                <span id="msgError"></span>
                 <input type="submit" value="Se connecter" id="inputLogin"><br>
                 <a href="" id="MdpOublie">Mot de passe oublié</a>
             </div>

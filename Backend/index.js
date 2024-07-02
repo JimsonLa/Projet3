@@ -54,13 +54,3 @@ function fetchCategories (works) {
     })
 }
 
-/*
-
-            window.addEventListener("load" , () => {
-                btn.classList.add("active")
-            })
-
-*/
-
-// A FAIRE : BOUTON "TOUS" ACTIVE PAR DEFAUT + PARTIE AUTHENTIFICATION METHOD POST VOIR SWAGGER + MODALE
-
