@@ -13,11 +13,17 @@ if(localStorage.getItem("authToken")){
     modeEditionText.id = "modeEditionText";
     modeEditionDiv.appendChild(modeEditionText);
     let sectionPortfolio = document.getElementById("portfolio");
-    let modifierA = document.createElement("a");
-    modifierA.textContent = 'modifier';
-    modifierA.id = "modifierA";
-    modifierA.href = "login.html"
-    sectionPortfolio.appendChild(modifierA);
-    let editBtn = document.getElementById("editBtn");
-    editBtn.style.color = "black";
+    let modifierBtn = document.createElement("a");
+    modifierBtn.textContent = 'modifier';
+    modifierBtn.id = "modifierBtn";
+    modifierBtn.href = "login.html"
+    sectionPortfolio.appendChild(modifierBtn);
+    let editLogo = document.getElementById("editLogo");
+    editLogo.style.color = "black";
+    let ModalContainer = document.createElement("div");
+    ModalContainer.id = "modal-container";
+    let main = document.querySelector("main");
+    main.appendChild(ModalContainer);
+    let modalTrigger = document.createElement("div");
+    modalTrigger.id = "modal-trigger";
 }

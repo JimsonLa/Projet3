@@ -325,7 +325,7 @@ header .fa-pen-to-square{
 	left: 56rem;
 }
 
-#modifierA{
+#modifierBtn{
 	color: black;
 	position: absolute;
 	z-index: 1005;
@@ -333,7 +333,7 @@ header .fa-pen-to-square{
 	left: 57.5rem;
 }
 
-#modifierA:hover{
+#modifierBtn:hover{
 	cursor: pointer;
 	text-decoration: underline;
 }
