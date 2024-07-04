@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         window.location.href="index.html"
     })
     .catch(error => {
-        const msgError = document.getElementById("msgError");
-        msgError.textContent = "Mot de passe incorrect"; 
+        alert('Identifiant ou mot de passe incorrect');
     })
 })});
 // EDIT PAGE APRES IF TOKEN TRUE + MODALE SUPPRESSION
