@@ -1,11 +1,14 @@
+ let worksData = []
+ 
  fetch("http://localhost:5678/api/works")
      .then(response => response.json())
      .then(works => {
-         displayGallery(works, ".gallery")
+        worksData = works
+         displayGallery(works, ".gallery", true)
          fetchCategories(works)
      })
 
-    function displayGallery(works, selector){
+    function displayGallery(works, selector, showCaption){
         const divgallery = document.querySelector(selector)
         divgallery.innerHTML = ""
 
@@ -16,9 +19,11 @@
             img.alt = work.title 
             figure.appendChild(img)
             divgallery.appendChild(figure)
-            const figcaption = document.createElement("figcaption")
-            figcaption.textContent = work.title
-            figure.appendChild(figcaption)
+            if (showCaption){
+                const figcaption = document.createElement("figcaption")
+                figcaption.textContent = work.title
+                figure.appendChild(figcaption)
+            }
         });
     }
 

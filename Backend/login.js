@@ -25,5 +25,4 @@ document.addEventListener("DOMContentLoaded", () =>{
     .catch(error => {
         alert('Identifiant ou mot de passe incorrect');
     })
-})});
-// EDIT PAGE APRES IF TOKEN TRUE + MODALE SUPPRESSION
+})});   
