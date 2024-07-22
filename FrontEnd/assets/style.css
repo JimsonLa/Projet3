@@ -380,7 +380,7 @@ header .fa-pen-to-square{
 	padding: 20px;
 	border: 1px solid #888;
 	width: 30%; /* Largeur de la modale */
-	height: 60%;
+	height: auto;
 	z-index: 1010;
 	text-align: center;
 }
@@ -458,11 +458,11 @@ header .fa-pen-to-square{
 		}
 
 		.galleryModale figure{
-			height: 77px;
+			height: auto;
 			width: 100px;
 		}
 
 		.galleryModale img{
-			height: 77px;
+			height: 130px;
 			width: 100px;
 		}

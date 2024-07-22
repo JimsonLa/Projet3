@@ -59,8 +59,16 @@ document.addEventListener("DOMContentLoaded", () =>{
         method:"DELETE",
     }
 
-})
+    // Ajouter photo
 
-// grafikart.fr
-// https://grafikart.fr/tutoriels/modal-javascript-css-72
-// 18:00
+    let spanText = document.getElementById('spanText');
+    border = document.getElementById("border");
+    let addPhoto = document.getElementById("addPhoto");
+    galleryModale = document.getElementsByClassName("galleryModale");
+    addPhoto.addEventListener('click', () => {
+        border.style.display = "none";
+        addPhoto.style.display = "none";
+        spanText.textContent = 'Ajout photo';
+    })
+
+})
