@@ -78,11 +78,16 @@
 			 <div class="modal-content">
 				<span class="close">&times;</span>
 				<p id="spanText">Galerie photo</p>
-				<div class="galleryModale">
+				<div class="galleryModale" id="conteneurPhotos">
 
 				</div>
-				<div class="ajouterPhotoModale">
-
+				<div id="ajouterPhotoModale">
+					<i class="fa-solid fa-arrow-left" id="backBtn"></i>
+					<div id="dragAndDrop">
+						<i class="fa-regular fa-image" id="pictureLogo"></i>
+						<input type="file" id="inputFile">
+						<label for="inputFile" id="labelFile">+ Ajouter photo</label>
+					</div>
 				</div>
 				<div id="border"></div>
 				<button id="addPhoto">Ajouter une photo</button>

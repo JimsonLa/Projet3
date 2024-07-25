@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         return response.json();
     })
     .then(data => {
-        localStorage.setItem("authToken", data.token)
+        sessionStorage.setItem("authToken", data.token)
         window.location.href="index.html"
     })
     .catch(error => {

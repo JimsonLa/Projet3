@@ -383,6 +383,7 @@ header .fa-pen-to-square{
 	height: auto;
 	z-index: 1010;
 	text-align: center;
+	border-radius: 10px;
 }
 
 .close {
@@ -465,4 +466,55 @@ header .fa-pen-to-square{
 		.galleryModale img{
 			height: 130px;
 			width: 100px;
+		}
+
+
+		#ajouterPhotoModale{
+			display: none;
+		}
+
+		.fa-arrow-left{
+			color: black;
+			float: left;
+			font-size: 25px;
+			font-weight: bold;
+			margin-top: -40px;
+		}
+
+		.fa-arrow-left:hover{
+			cursor: pointer;
+		}		
+
+		#dragAndDrop{
+			display: none;
+			background-color: #95f8ff2f;
+			width: 300px;
+			height: 150px;
+			margin-left: 50px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#pictureLogo{
+			display: none;
+			color: #B9C5CC;
+			font-size: 50px;
+		}
+
+		#inputFile{
+			display: none;
+		}
+
+		#labelFile{
+			cursor: pointer;
+			font-size: 14px;
+			color: #306685;
+			font-weight: bold;
+			margin-top: 110px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-left: 25px;
+			padding-right: 25px;
+			border-radius: 20px;
+			background-color: #B9C5CC;
 		}
