@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
     .then(data => {
         sessionStorage.setItem("authToken", data.token)
-        window.location.href="index.html"
+        window.location.replace("index.html");
+
     })
     .catch(error => {
         alert('Identifiant ou mot de passe incorrect');
