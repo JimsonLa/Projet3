@@ -21,10 +21,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         const editLogo = document.getElementById('editLogo');
         editLogo.style.display = 'flex';
         editLogo.style.color = 'black';
-        editLogo.style.zIndex = '1';
-        modale.style.zIndex = '1100';
-        modale2.style.zIndex = '11000';
-        modale2.style.position = 'absolute'
     }
 });
 
