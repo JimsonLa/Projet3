@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         });
         filtersDiv.style.display='none';
         const editLogo = document.getElementById('editLogo');
-        editLogo.style.display = 'flex';
         editLogo.style.color = 'black';
     }
 });
@@ -86,7 +85,7 @@ function modaleGallery(data) {
           deleteWorkById(workId);
     });
     } 
-    )};
+    )}
 
     //DELETE WORK//
 
@@ -100,7 +99,7 @@ function deleteWorkById(i) {
     }).then((response) => {
       if (response.ok) {
         alert("projet supprimé avec succès")
-        work = worksData.filter((work) => work.id != i);
+        work = worksData.filter((work) => work.id !== i);
         displayGallery(work, ".gallery", true)
         modaleGallery(work);
       } else {

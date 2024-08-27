@@ -198,15 +198,16 @@ footer nav ul {
 
 .btn-modifier{
     display: none;
-    margin-top: 89px;
-    margin-left: 30px;
+    padding-top: 89px;
     cursor: pointer;
+
 }
-.btn-modifier i{
-    padding-right: 10px;
-}
+
+
+
 .btn-modifier i, .btn-modifier a{
     color: black;
+
 }
 .btn-modifier :hover{
     color: #B1663C;
@@ -544,6 +545,9 @@ header .fa-pen-to-square{
 }
 
 
+.projets{
+    margin-right: 20px;
+}
 
 .modal {
     display: none; /* Masquer la modale par défaut */
@@ -704,5 +708,6 @@ header .fa-pen-to-square{
 
             margin-left: -80px;
             margin-top: 8px;
-            position: relative;
+            display: flex;
         }
+
